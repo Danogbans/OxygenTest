@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>{% block title %}Base{% endblock %}</title>
+	<link href="{% static 'css/base.css' %}" rel="stylesheet">
+</head>
+<body>
+	{% block content %}
+	{% endblock %}
+</body>
+</html>
+
+
+<!--Esto es el boiler plate normal de html, con tags de django añadidos. Esta es la pagina principal donde va todos los diseños de otros paginas, despues, el diseño se extiende a otras paginas-->
